@@ -1,0 +1,7 @@
+
+    
+    ---
+deployment:
+  tasks:
+    - export INVERSIONES=/home/afainversiones/repositories/INVERSIONES
+    - /bin/cp -R images $INVERSIONES
