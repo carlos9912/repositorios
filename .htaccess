@@ -1,0 +1,9 @@
+
+RewriteOptions inherit
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
